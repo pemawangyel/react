@@ -1,5 +1,6 @@
 html{
     background-color: antiquewhite;
+    size: 30px;
 }
 h1{
     color: whitesmoke;
@@ -9,9 +10,20 @@ h2{
     color: #FAF8F1;
     background: #C58940;
 }
-p{
+
+#color{
     color: coral;
-    font-size: 2x;
+}
+#FontS{
+    font-size: 2rem;
+}
+#FW{
     font-weight: 900;
-    font-family: Caveat;
+}
+#FF{
+    font-family: monospace;
+    font-size: 400;
+}
+#TA{
+    text-align: right;
 }
