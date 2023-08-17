@@ -29,7 +29,8 @@ html, body{
 .menu > a{
     text-decoration: none;
     color: aquamarine;
-
+    margin: 0;
+    display: inline;
 }
 .header{
     height: 300px;
@@ -40,10 +41,16 @@ html, body{
 .header > h1{
     color: blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
+    font-size: 100px;
     text-align: center;
     position: relative;
     top: 100px;
+    transition: ease-in-out 10s;
+}
+.header > h1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 .header > img{
     position: absolute;
@@ -63,8 +70,27 @@ html, body{
 .sidebar{
     width: 230px;
     height: 250px;
-    background-color: blueviolet;
+    background-color: yellow;
+    border: green solid;
     border-radius: 10px;
+    transition: background-color 3s ease;
+}
+/* @keyframes move{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+} */
+.sidebar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: orange;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 1s;
+}
+.sidebar:not(:hover) {
+    transition: 1s;    
 }
 .lnk{
     position: relative;
@@ -73,8 +99,20 @@ html, body{
     text-decoration: none;
     color: wheat;
     line-height: 30px;
+    text-decoration: none;
+    color: blue;
+    transition: background-color 5s ease;
 }
-
+.lnk:hover{
+    transform: scale(5s);
+    cursor: pointer;
+    background-color: orange;
+    transition: 1s;
+    font-size: 25px;
+}
+.lnk:not(:hover) {
+    transition: 1s;    
+}
 p{
     text-align: center;   
 }
@@ -82,24 +120,58 @@ p{
 .first{
     height: 250px;
     width: 230px;
-    background: blue;
+    background: yellow;
     border: green solid;
     border-radius: 10px;
+    transition: background-color 3s ease;
+}
+.first:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: orange;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 1s;
+}
+.first:not(:hover) {
+    transition: 1s;    
 }
 .second{
     height: 250px;
     width: 230px;
-    background: white;
+    background: yellow;
     border: green solid;
     border-radius: 10px;
+    transition: background-color 3s ease;
+}
+.second:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: orange;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 1s;
+}
+.second:not(:hover) {
+    transition: 1s;    
 }
 .third{
     height: 250px;
     width: 230px;
-    background: orange;
+    background: yellow;
     border: green solid;
     border-radius: 10px;
+    transition: background-color 3s ease;
 }
+.third:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: orange;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 1s;
+}
+.third:not(:hover) {
+    transition: 1s;    
+}
+
 .floatleft{
     float: right;
     position: relative;
@@ -107,6 +179,7 @@ p{
 }
 .p1{
     color: wheat;
+    text-align: justify;
 }
 .p1 span{
     color: chartreuse;
@@ -120,4 +193,35 @@ p{
 }
 .p1{
     color: wheat;
+}
+
+.footer > img{
+    border-radius: 20px;
+    border-color: white;
+    box-shadow: 5px 5px pink;
+}
+.footer1 > img{
+    border-radius: 20px;
+    border-color: white;
+}
+#home{
+
+    background: black;
+}
+#details{
+
+    background: black;
+}
+#about{
+
+    background: black;
+}
+#contact{
+
+    background: black;
+}
+button{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
 }
