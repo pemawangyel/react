@@ -40,3 +40,6 @@ console.log("After swapping:");
 console.log("a =", a);
 console.log("b =", b);
 
+for (let o = 0; o < 5; o++) {
+    console.log(o);
+  }
