@@ -1,0 +1,132 @@
+
+.main{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    background: black;
+    padding: 20px;
+    margin: 10px;
+}
+.item1{
+    background-color: lime;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 3px;
+}
+.cl1{
+    background-color: red;
+    width: 10rem;
+    border: 3px solid black;
+}
+.item2{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    padding: 10px;
+}
+.cl2{
+    background-color: red;
+    width: 10rem;
+    border: 3px solid black;
+}
+.item2first{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item3{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    padding: 10px;
+    gap: 3px;
+}
+.cl3{
+    background-color: blue;
+    border: 3px solid black;
+
+}
+.item4{
+    background-color: green;
+    padding: 10px;
+    gap: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cl4{
+    background-color: red;
+    border: 3px solid black;
+}
+.item4fi{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item4se{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item4th{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item4fo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item4ff{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;    
+}
+.item4six{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item5{
+    background-color: pink;
+    padding: 10px;
+    gap: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.cl5{
+    background-color: red;
+    border: 3px solid black;
+}
+.item5fi{ 
+    grid-column-start: 1;
+    grid-column-end: 2.5;
+    grid-column-end: span 0.5;
+}
+.item5se{
+    grid-column-start: span 2.5;
+    grid-column-end: 4;
+}
+.item6{
+    background-color: orange;
+}
+.item7{
+    background-color: skyblue;
+}
+.item8{
+    background-color: orchid;
+}
+.item9{
+    background-color: gray;
+}
