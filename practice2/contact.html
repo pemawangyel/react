@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        .PD{
+            color: green;
+        }
+        .EX{
+            color: orange;
+        }
+        .main{
+            height: 350px;
+            width: 350px;
+            background-image: linear-gradient(to right, red, yellow);
+            position: relative;
+            top: 70px;
+            left: 35%;
+            border-radius: 30px;
+            box-shadow: 10px 10px 10px 10px black;
+            animation: contact 10s;
+            animation-iteration-count: infinite;
+            /* opacity: 0;
+            transition: opacity 230ms cubic-bezier(0.075, 0.82, 0.165, 1) */
+        }
+        /* .main:hover{
+            opacity: 1;
+        } */
+        @keyframes contact{
+            from{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .detail{
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body background="./bg.jpg">
+    <div class="main">
+    <div class="detail">
+        <h1>PERSONAL DETAILS</h1>
+    <ul class="PD">
+        <li>Name: Pema</li>
+        <li>AGe: 33</li>
+        <li>Gender: Male</li>
+        <li>Email: opema@gmail.com</li>
+    </ul>
+    <h1>EXPERIENCE</h1>
+    <ol class="EX">
+        <li>currently working in selise</li>
+        <li>before selise work at MR</li>
+        <li>Before MR work at NIIT</li>
+        <li>Before NIIT was in college</li>
+    </ol>
+    </div>
+</div> 
+</body>
+</html>

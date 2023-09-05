@@ -1,0 +1,74 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    height: 30rem;
+
+}
+.container > .item{
+    background: blue;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.container > .item1{
+    background: green !important;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.container > .item2{
+    background: blue !important;
+    column-span: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ .item2 > .item2Item{
+    border: 0.2rem solid white;
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+ }
+ .item2Item{
+    font-family: monospace;
+    font-size: larger;
+    font-weight: 100;
+    color: yellow;
+ }
+
+
+.container > .item3{
+    background: pink !important;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+.container > .item4{
+    background: orange !important;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.container > .item5{
+    background: red !important;
+    
+}
+.container > .item6{
+    background: yellow !important;
+    
+}
+.container > .item7{
+    background: purple !important;
+    
+}
+.container > .item8{
+    background: wheat !important;
+    
+}

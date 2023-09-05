@@ -1,0 +1,29 @@
+html{
+    background-color: antiquewhite;
+    size: 30px;
+}
+h1{
+    color: whitesmoke;
+    background: darkgreen;
+}
+h2{
+    color: #FAF8F1;
+    background: #C58940;
+}
+
+#color{
+    color: coral;
+}
+#FontS{
+    font-size: 2rem;
+}
+#FW{
+    font-weight: 900;
+}
+#FF{
+    font-family: monospace;
+    font-size: 400;
+}
+#TA{
+    text-align: right;
+}

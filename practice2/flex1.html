@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            border: green 1px solid;
+        }
+        /* p{
+            border: red 1px solid;
+            width: 100px;
+            flex-basis: 200px; //this will take over the width value
+        } */
+        /* p{
+            border: red 1px solid;
+            flex-basis: 200px;
+            max-width: 100px; // this will take over flex-basis value
+        } */
+        /* p{
+            border: red 1px solid;
+            flex-basis: 200px;
+            min-width: 300px; //this will take over flex-basis value and when you try to shrink it will 
+                                shrink till 300px
+        } */
+        p{
+            border: red 1px solid;
+            flex-basis: 100px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact Us</p>
+        <p>This is where the things will go, this will shrink automatically</p>
+    </div>
+</body>
+</html>
