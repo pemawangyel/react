@@ -4,4 +4,6 @@ inspect > console > alert("") press enter to pop alert box
                               use shift+enter to use alert with more info
 inspect > source > snippets > create new file with .js
                               prompt("") press ctrl+shift to show prompt box
-                              where/how to retrive the info entered in prompt box                                
+                              where/how to retrive the info entered in prompt box   
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+                                                           
