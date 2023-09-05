@@ -9,5 +9,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 https://github.com/rwaldron/idiomatic.js - living documentation for js convention
 
-Datatypes:
+Datatypes: Number, strings and boolean
+inspect > console > you can add numbers, you can use typeof tgo check the datatypes
                                                            
